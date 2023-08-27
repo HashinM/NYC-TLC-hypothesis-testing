@@ -27,7 +27,8 @@ cash = taxi_data[taxi_data['payment_type'] == 2]['fare_amount']
 credit_card = taxi_data[taxi_data['payment_type'] == 1]['fare_amount']
 stats.ttest_ind(a = credit_card, b = cash, equal_var = False)
 
-# Since the P value is smaller than the significance level we reject the null hypothesis, meaning there IS a significant difference in the total fare between credit cards and cash
+# Since the P value is smaller than the significance level we reject the null hypothesis, meaning there IS a significant 
+# difference in the total fare between credit cards and cash
 
 # *** Some import things to note: Firstly, the key business insight gained from this A/B testing is that
 # encouraging customers to pay with credit cards will increase revenue. Secondly, this project was done to
